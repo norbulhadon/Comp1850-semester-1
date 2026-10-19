@@ -6,19 +6,21 @@
 
 
 def addition(num1, num2):
+    """returns the addition of num 1 and num 2"""
     return num1 + num2
 
 
 def subtraction(num1, num2):
+     """returns the subtraction of num 1 and num 2"""
     return num1 - num2
 
 
 def multiplication(num1, num2):
+     """returns the multiplication of num 1 and num 2"""
     return num1 * num2
 
 
 def division(num1, num2):
-    if num2 == 0:
         return "Error: cannot divide by zero"
     else:
         return num1 / num2
