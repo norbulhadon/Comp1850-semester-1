@@ -13,11 +13,18 @@ def countdown(n):
     Returns:
         None, prints the countdown sequence from n to 0.
     """
+    print(n)
 
     # Complete your code here
+    if n == 0:
+        return
+    
+
     # base case
 
     # recursive case
+    countdown(n-1)
+
 
 
 # check if correct output is produced
