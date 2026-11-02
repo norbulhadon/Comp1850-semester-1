@@ -41,9 +41,8 @@ Next, try creating a feed using an invalid level or period:
 Both of these attempts should fail with a `TypeError` exception.
 
 Now create a valid feed and look at how it is represented as a string:
-
-    feed = QuakeFeed("4.5", "week")
-    print(feed)
+ feed = QuakeFeed("4.5", "week")
+ print(feed)
 
 To read the feed and make its data available, do this:
 

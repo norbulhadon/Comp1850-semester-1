@@ -36,7 +36,13 @@ class QuakeDataset:
         # Write code here to replace existing data with new earthquake data.
         # Use the value returned by the feed's reader() method as the
         # subject of a for loop.
-
+        self.data.clear()
+        for info in self.feed.reader():
+            time = datetime.fromisoformat(info['time'])
+            lon = float(info['longitude'])
+            lat = float(info['latitude'])
+            depth = float(info['depth'])
+            mag = float(info['mag'])
         # Keep in mind that the items obtained by this for loop will be
         # dictionaries. You will need to extract the required values from
         # each dictionary and convert them into the required types before
@@ -52,7 +58,7 @@ class QuakeDataset:
         """
         Returns information on this dataset as a string.
         """
-        # Write code here to create and return a string representation
+        # Write code here to create and return a string representation using dunder method
         # (Include number of quakes and details of the feed that was used)
 
     def mean_depth(self):
