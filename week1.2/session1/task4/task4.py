@@ -9,7 +9,7 @@ both = fruit.intersection(vegetables)
 print(both)
 
 # Why does the following code diplay five items?
-#because union() combines all unique items from both sets but not duplicates like 'tomato'
+#because union() combines all unique items from both sets including shared items once like 'tomato' but not duplicates(2 tomatoes in this case)
 food = fruit.union(vegetables)
 print(food)
 
@@ -19,6 +19,6 @@ print(fruit)
 # Remove an item from vegetables
 vegetables.remove("potato")
 print(vegetables)
-# Find and display symmetric difference of the two sets
+# Find and display symmetric difference of the two sets(which combines two sets and removes everything they have in common completely like 'tomato')
 diff = fruit.symmetric_difference(vegetables)
 print(diff)
