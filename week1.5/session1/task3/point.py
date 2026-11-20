@@ -5,22 +5,28 @@ class Point:
     A Point in 2D space.
     """
     def __init__(self, x, y):
+        """
+        Creates a Point, given x and y coordinates.
         self.x = x
         self.y = y
-    def distance(self):
 
+    def distance(self):
         """
-        calculates the distance between the two points.
+        Calculates the distance from the origin to this point.
         """
         return math.hypot(self.x, self.y)
+
     def distance_to(self, point):
-        """returns the distance from this point to the specified point.
+        """
+        Returns the distance from this point to the specified point.
         """
         return math.hypot(self.x - point.x, self.y - point.y)
 
-    p = Point(1.5, 4.2)
-    q = Point(3.7, 2.6)
-    print(p.distance_to(q))
+ #demonstrating use of point class
+p = Point(1.5, 4.2)
+q = Point(3.7, 2.6)
+print(f"Distance from origin to p: {p.distance()}")
+print(f"Distance from p to q: {p.distance_to(q)}")
 
     # Add constructor here
 

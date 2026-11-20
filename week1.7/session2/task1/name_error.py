@@ -1,9 +1,10 @@
 # Week 1.7, Session 2: Task 1 - NameError
 
 # Run this program and observe what happens
+#there is name error because total is being used withpout it being created
 
 expenses = [10, 20, 30]
-
+total = 1
 for amount in expenses:
     total = total + amount  
 
