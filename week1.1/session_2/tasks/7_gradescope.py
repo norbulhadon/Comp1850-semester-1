@@ -3,11 +3,16 @@
 # You are going to write a very simple program:
 
 # Ask a user to enter two numbers (one per input)
-
+import sys
+num1 = input("Enter number 1: ")
+num2 = input("Enter number 2: ")
+if not num1.isdigit() or not num2.isdigit():
+    print("That is not a number")
+    sys.exit()
 # multiply those numbers together
-
+result = int(num1) * int(num2)
 # print out the result
-
+print(result)
 # There is an extra point available for validating that they entered numbers!
 # Add to your code so that if they entered something other than an integer it prints
 # 'That is not a number' and exits.
