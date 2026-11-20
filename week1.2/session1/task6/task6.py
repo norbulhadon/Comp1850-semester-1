@@ -4,7 +4,12 @@ from pprint import pprint
 
 # Create music database, as a dictionary of strings mapped to lists
 # (keys are artist names, values are lists of album names)
-
+music = {
+    "Kendric Lamar": ["to pimp a butterfly", "good kid, m.A.A.d city"],
+    "Taylor Swift": ["Folklore", "Red", "Lover"],
+}
 # Pretty-print the data structure
+pprint(music)
 
 # Display details of one album recorded by a specific artist
+print(music["Kendric Lamar"][1])
